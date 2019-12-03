@@ -3,7 +3,9 @@
 }
 
 <div class="text-center">
-    <p>Random passcode (passcode #@ViewBag.Count++)</p>
-    <div></div>
-    <button><a href="/generate">Generate</a></button>
+    <p class="lead">Random passcode (passcode #@ViewBag.Count)</p>
+    <div class="container">
+        <p class="lead">@ViewBag.Password</p>
+    </div>
+    <a asp-action="Generate" asp-controller="Home">Generate</a>
 </div>
